@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useCart } from "@/context/CartContext";
 import { Check, Gift, ArrowRight } from "lucide-react";
 import { supabase } from "@/lib/supabase";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function CheckoutPage() {
     const { cartItems, cartTotal } = useCart();
