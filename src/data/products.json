@@ -1,0 +1,322 @@
+[
+  {
+    "id": "w1",
+    "name": "Royal Oak Selfwinding",
+    "brand": "Audemars Piguet",
+    "category": "watches",
+    "price": 14500000,
+    "description": "An unparalleled masterpiece of horology. The Audemars Piguet Royal Oak Selfwinding in hand-finished stainless steel features the legendary Grande Tapisserie dial. Each piece embodies ultimate prestige and exclusivity for the discerning Pakistani collector. Includes Free Insured Shipping across Pakistan and a comprehensive 2-Year International Warranty.",
+    "features": [
+      "Calibre 4302",
+      "Stainless Steel Case",
+      "Glareproofed Sapphire Crystal",
+      "50m Water Resistance"
+    ],
+    "movement": "Automatic",
+    "image": "/images/submariner_watch.png"
+  },
+  {
+    "id": "w2",
+    "name": "Nautilus Travel Time Chronograph",
+    "brand": "Patek Philippe",
+    "category": "watches",
+    "price": 32000000,
+    "description": "The epitome of high-end Swiss watchmaking. Fusing two highly popular complications, the Patek Philippe Nautilus Travel Time Chronograph is crafted in exquisite rose gold. Secure this ultra-rare timepiece with confidence. Enjoy Free Insured Shipping across Pakistan and a 2-Year International Warranty.",
+    "features": [
+      "Caliber CH 28-520 C FUS",
+      "Rose Gold",
+      "Dual Time Zone",
+      "120m Water Resistance"
+    ],
+    "movement": "Automatic Chronograph",
+    "image": "https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "w3",
+    "name": "Submariner Date",
+    "brand": "Rolex",
+    "category": "watches",
+    "price": 4850000,
+    "description": "The quintessential diver's watch. The Rolex Submariner Date in Oystersteel with a highly-resistant Cerachrom ceramic bezel is a symbol of absolute reliability and enduring status symbol. Shipped with absolute peace of mind via Free Insured Shipping across Pakistan, backed by a 2-Year International Warranty.",
+    "features": [
+      "Calibre 3235",
+      "Oystersteel",
+      "Unidirectional Rotatable Bezel",
+      "300m Water Resistance"
+    ],
+    "movement": "Automatic",
+    "image": "https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "w4",
+    "name": "Seamaster Diver 300M",
+    "brand": "Omega",
+    "category": "watches",
+    "price": 1850000,
+    "description": "A legendary maritime heritage meets modern innovation. The Omega Seamaster Diver 300M offers peerless anti-magnetic resistance and Co-Axial precision. An iconic addition to any gentlemen's collection. Enjoy Free Insured Shipping across Pakistan and our standard 2-Year International Warranty.",
+    "features": [
+      "Co-Axial Master Chronometer Calibre 8800",
+      "Helium Escape Valve",
+      "Anti-magnetic",
+      "300m Water Resistance"
+    ],
+    "movement": "Automatic",
+    "image": "https://images.unsplash.com/photo-1587836374828-4dbafa94cf0e?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "w5",
+    "name": "Datograph Up/Down",
+    "brand": "A. Lange & Söhne",
+    "category": "watches",
+    "price": 28500000,
+    "description": "The pinnacle of German haute horlogerie. The Datograph in solid platinum stands as a benchmark in chronograph engineering, boasting a breathtaking hand-engraved balance cock. A generational heirloom offering Free Insured Shipping across Pakistan and a 2-Year International Warranty.",
+    "features": [
+      "Calibre L951.6",
+      "Platinum Case",
+      "Outsize Date",
+      "Power Reserve Indicator"
+    ],
+    "movement": "Manual Winding",
+    "image": "https://images.unsplash.com/photo-1623998021446-45cd9b269056?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "w6",
+    "name": "Carrera Chronograph",
+    "brand": "TAG Heuer",
+    "category": "watches",
+    "price": 1950000,
+    "description": "Born on the racetrack, the TAG Heuer Carrera Chronograph combines high-adrenaline performance with timeless elegance. A robust statement piece reflecting modern ambition and drive. Delivered safely to your door with Free Insured Shipping across Pakistan and backed by a 2-Year International Warranty.",
+    "features": [
+      "Calibre Heuer 02",
+      "Stainless Steel Case",
+      "Tachymeter Bezel",
+      "100m Water Resistance"
+    ],
+    "movement": "Automatic Chronograph",
+    "image": "https://images.unsplash.com/photo-1614164185128-e4ec99c436d7?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "w7",
+    "name": "Big Pilot's Watch",
+    "brand": "IWC Schaffhausen",
+    "category": "watches",
+    "price": 3400000,
+    "description": "A commanding presence on the wrist. The IWC Big Pilot's Watch Edition 'Le Petit Prince' features striking blue aesthetics and an astonishing 7-day power reserve. The ultimate aviator's instrument. Includes Free Insured Shipping across Pakistan and a 2-Year International Warranty.",
+    "features": [
+      "Calibre 52110",
+      "Pellaton Automatic Winding",
+      "7-Day Power Reserve",
+      "Soft-iron Inner Case"
+    ],
+    "movement": "Automatic",
+    "image": "https://images.unsplash.com/photo-1622434641406-a158123450f9?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "w8",
+    "name": "Fifty Fathoms Automatique",
+    "brand": "Blancpain",
+    "category": "watches",
+    "price": 5200000,
+    "description": "The progenitor of the modern dive watch. The Blancpain Fifty Fathoms in titanium combines a domed sapphire bezel with immaculate finishing for an elite aquatic lifestyle. Shipped directly via our Free Insured Shipping across Pakistan with a 2-Year International Warranty.",
+    "features": [
+      "Calibre 1315",
+      "Titanium Case",
+      "Sapphire Bezel",
+      "300m Water Resistance"
+    ],
+    "movement": "Automatic",
+    "image": "https://images.unsplash.com/photo-1594534475808-b18fc33b045e?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "w9",
+    "name": "Reverso Tribute Monoface",
+    "brand": "Jaeger-LeCoultre",
+    "category": "watches",
+    "price": 3150000,
+    "description": "The watchmaker of watchmakers presents the legendary Reverso. Originally designed for polo players, this Art Deco icon embodies sophisticated elegance for the modern gentleman. Experience unrivaled luxury with Free Insured Shipping across Pakistan and a 2-Year International Warranty.",
+    "features": [
+      "Calibre 822",
+      "Rectangular Steel Case",
+      "Appliqué Hour-markers",
+      "30m Water Resistance"
+    ],
+    "movement": "Manual Winding",
+    "image": "/images/reverso_watch.png"
+  },
+  {
+    "id": "w10",
+    "name": "Tank Must",
+    "brand": "Cartier",
+    "category": "watches",
+    "price": 1250000,
+    "description": "A true icon of refined taste. The Cartier Tank Must features unparalleled geometric purity and timeless allure, characterized by its beaded crown and synthetic spinel cabochon. Guaranteed authentic with Free Insured Shipping across Pakistan and a 2-Year International Warranty.",
+    "features": [
+      "High Autonomy Quartz",
+      "Steel Case",
+      "Silvered Dial",
+      "Blued-steel Sword-shaped Hands"
+    ],
+    "movement": "Quartz",
+    "image": "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "g1",
+    "name": "Aere Aviator",
+    "brand": "Cartier",
+    "category": "glasses",
+    "price": 420000,
+    "description": "A symphony of luxury and design. The Cartier signature gold-tone titanium aviator sunglasses feature premium anti-reflective lenses, delivering a uniquely prestigious aesthetic. Secure yours with Free Insured Shipping across Pakistan and a 2-Year International Warranty.",
+    "features": [
+      "Pure Titanium Frame",
+      "Anti-reflective Lenses",
+      "Gold Finish",
+      "100% UV Protection"
+    ],
+    "material": "Gold-Plated Titanium",
+    "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "g2",
+    "name": "Tom Ford FT5753",
+    "brand": "Tom Ford",
+    "category": "glasses",
+    "price": 145000,
+    "description": "Sartorial elegance meets optical perfection. Classic soft square frames characterized by the iconic Tom Ford metal 'T' logo decoration. A statement of impeccable style. Delivered via Free Insured Shipping across Pakistan alongside a 2-Year International Warranty.",
+    "features": [
+      "Acetate Frame",
+      "Blue Light Block Lenses",
+      "Iconic T Logo",
+      "Italian Craftsmanship"
+    ],
+    "material": "Acetate",
+    "image": "https://images.unsplash.com/photo-1572635196237-14b3f281503f?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "g3",
+    "name": "Oliver Peoples Gregory Peck",
+    "brand": "Oliver Peoples",
+    "category": "glasses",
+    "price": 165000,
+    "description": "Handcrafted Hollywood glamour. Created in collaboration with the Peck Estate, this iconic vintage-inspired design captures the essence of classic intellectual refinement. Enhance your vision with Free Insured Shipping across Pakistan and a reliable 2-Year International Warranty.",
+    "features": [
+      "Vintage Design",
+      "Keyhole Bridge",
+      "Handcrafted Acetate",
+      "Anti-reflective Coating"
+    ],
+    "material": "Handcrafted Acetate",
+    "image": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "g4",
+    "name": "Dita Grandmaster-Six",
+    "brand": "DITA",
+    "category": "glasses",
+    "price": 320000,
+    "description": "Bold, unapologetic luxury. The Grandmaster-Six is a commanding oversized aviator featuring DITA's signature titanium hardware. Crafted for high society. Shop with complete confidence with our Free Insured Shipping across Pakistan and a 2-Year International Warranty.",
+    "features": [
+      "Oversized Aviator",
+      "Titanium Accents",
+      "Japanese Acetate",
+      "100% UVA and UVB Lens"
+    ],
+    "material": "Acetate & Titanium",
+    "image": "/images/dita_glasses.png"
+  },
+  {
+    "id": "g5",
+    "name": "Gucci GG0036S",
+    "brand": "Gucci",
+    "category": "glasses",
+    "price": 185000,
+    "description": "Embrace maximalist Italian flair. These luxurious oversized square sunglasses in heavy black acetate feature the iconic interlocking G detail for undeniable prestige. Enjoy our complimentary Free Insured Shipping across Pakistan and a 2-Year International Warranty.",
+    "features": [
+      "Oversized Square",
+      "Interlocking G Decor",
+      "Tinted Lenses",
+      "Made in Italy"
+    ],
+    "material": "Premium Acetate",
+    "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "g6",
+    "name": "Maybach The Artist II",
+    "brand": "Maybach",
+    "category": "glasses",
+    "price": 750000,
+    "description": "The ultimate expression of bespoke extravagance. Opulent eyewear individually handcrafted from natural horn and gold-plated titanium, epitomizing the zenith of luxury. Delivered to you via Free Insured Shipping across Pakistan, inclusive of a 2-Year International Warranty.",
+    "features": [
+      "Natural Buffalo Horn",
+      "24k Gold-Plated",
+      "Carl Zeiss Lenses",
+      "Handcrafted in Germany"
+    ],
+    "material": "Horn & Gold-Plated Titanium",
+    "image": "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "g7",
+    "name": "Matsuda M3023",
+    "brand": "Matsuda",
+    "category": "glasses",
+    "price": 260000,
+    "description": "Masterful Japanese artistry. The Matsuda M3023 represents an architectural triumph, featuring signature intricate engraving along the temples. Worn by global visionaries. Secure yours with Free Insured Shipping across Pakistan and a 2-Year International Warranty.",
+    "features": [
+      "Modified Aviator",
+      "Signature Engraving",
+      "Japanese Titanium",
+      "Anti-reflective Lenses"
+    ],
+    "material": "Japanese Titanium",
+    "image": "/images/matsuda_glasses.png"
+  },
+  {
+    "id": "g8",
+    "name": "Persol 714 Steve McQueen",
+    "brand": "Persol",
+    "category": "glasses",
+    "price": 155000,
+    "description": "Iconic, rebellious, timeless. The legendary folding sunglasses famously worn by Steve McQueen, featuring the patented Meflecto system. A legendary frame for a legendary individual. Comes with Free Insured Shipping across Pakistan and a 2-Year International Warranty.",
+    "features": [
+      "Folding Frame",
+      "Meflecto System",
+      "Crystal Polarized Lenses",
+      "Handmade in Italy"
+    ],
+    "material": "Acetate",
+    "image": "https://images.unsplash.com/photo-1510127034890-ba27508e9f1c?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "g9",
+    "name": "Aviator Classic",
+    "brand": "Ray-Ban",
+    "category": "glasses",
+    "price": 65000,
+    "description": "The timeless icon of flight, reimagined for elite sophistication. The Ray-Ban Aviator Classic delivers exceptional G-15 tint clarity and a sleek gold frame that transcends generations. Benefit from Free Insured Shipping across Pakistan and a 2-Year International Warranty.",
+    "features": [
+      "Teardrop Lenses",
+      "G-15 Solid Colors",
+      "Gold Metal Frame",
+      "100% UV Protection"
+    ],
+    "material": "Metal",
+    "image": "/images/dita_glasses.png"
+  },
+  {
+    "id": "g10",
+    "name": "Chrome Hearts Sluntradiction",
+    "brand": "Chrome Hearts",
+    "category": "glasses",
+    "price": 540000,
+    "description": "Rebel luxury elevated to high art. This exquisite frame seamlessly blends dense Japanese acetate with solid .925 sterling silver hardware featuring intricate gothic cross motifs. Procured with absolute exclusivity: Free Insured Shipping across Pakistan and a 2-Year International Warranty.",
+    "features": [
+      ".925 Sterling Silver Accents",
+      "Gothic Motifs",
+      "Japanese Craftsmanship",
+      "Carl Zeiss Optics"
+    ],
+    "material": "Acetate & Sterling Silver",
+    "image": "https://images.unsplash.com/photo-1574258495973-f010dfbb5371?auto=format&fit=crop&q=80&w=800"
+  }
+]
