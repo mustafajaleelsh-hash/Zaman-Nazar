@@ -31,17 +31,17 @@ export default function BlogPage() {
     ];
 
     return (
-        <div className="min-h-screen bg-black pt-12 pb-24 px-6 md:px-12">
+        <div className="min-h-screen bg-background pt-12 pb-24 px-6 md:px-12">
             <div className="container mx-auto max-w-7xl">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-white tracking-widest uppercase mb-6 text-center">Editorial</h1>
-                <p className="text-gray-400 max-w-2xl mx-auto tracking-wide font-light mb-16 text-center">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-foreground tracking-widest uppercase mb-6 text-center">Editorial</h1>
+                <p className="text-foreground/70 max-w-2xl mx-auto tracking-wide font-light mb-16 text-center">
                     Insights, history, and style advice curated by the experts at Zaman & Nazar.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                     {posts.map(post => (
                         <div key={post.id} className="group cursor-pointer">
-                            <div className="relative h-[300px] bg-[#111] overflow-hidden mb-6">
+                            <div className="relative h-[300px] bg-panel overflow-hidden mb-6">
                                 <Image
                                     src={post.image}
                                     alt={post.title}
@@ -53,11 +53,11 @@ export default function BlogPage() {
                             <div className="flex flex-col">
                                 <div className="flex justify-between items-center text-[10px] uppercase tracking-[0.2em] text-gold-500 mb-3 font-semibold">
                                     <span>{post.category}</span>
-                                    <span className="text-gray-600">{post.date}</span>
+                                    <span className="text-foreground/60">{post.date}</span>
                                 </div>
-                                <h2 className="text-xl font-serif text-white mb-3 group-hover:text-gold-500 transition-colors leading-snug">{post.title}</h2>
-                                <p className="text-gray-400 text-sm font-light leading-relaxed mb-6">{post.excerpt}</p>
-                                <Link href={`#`} className="text-xs uppercase tracking-widest text-white border-b border-gold-500 pb-1 self-start hover:text-gold-500 transition-colors">
+                                <h2 className="text-xl font-serif text-foreground mb-3 group-hover:text-gold-500 transition-colors leading-snug">{post.title}</h2>
+                                <p className="text-foreground/70 text-sm font-light leading-relaxed mb-6">{post.excerpt}</p>
+                                <Link href={`#`} className="text-xs uppercase tracking-widest text-foreground border-b border-gold-500 pb-1 self-start hover:text-gold-500 transition-colors">
                                     Read Article
                                 </Link>
                             </div>

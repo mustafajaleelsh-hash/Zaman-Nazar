@@ -63,13 +63,13 @@ export default function AuthPage() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6 }}
-                className="w-full max-w-md bg-[#0a0a0a] border border-white/10 p-10 relative z-10 shadow-2xl"
+                className="w-full max-w-md bg-background border border-border p-10 relative z-10 shadow-2xl"
             >
                 <div className="text-center mb-10">
-                    <h1 className="text-3xl font-serif tracking-widest text-white mb-2">
+                    <h1 className="text-3xl font-serif tracking-widest text-foreground mb-2">
                         {isLogin ? "SIGN IN" : "CREATE ACCOUNT"}
                     </h1>
-                    <p className="text-gray-400 text-sm font-light">
+                    <p className="text-foreground/70 text-sm font-light">
                         {isLogin ? "Access your high-end collections." : "Join the exclusive Zaman & Nazar club."}
                     </p>
                 </div>
@@ -77,43 +77,43 @@ export default function AuthPage() {
                 <form className="flex flex-col gap-6" onSubmit={handleAuth}>
                     {!isLogin && (
                         <div className="flex flex-col gap-3">
-                            <label className="text-xs uppercase tracking-widest text-gray-500">Full Name *</label>
+                            <label className="text-xs uppercase tracking-widest text-foreground/50">Full Name *</label>
                             <input
                                 required
                                 type="text"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
-                                className="bg-transparent border-b border-white/20 pb-2 text-white outline-none focus:border-gold-500 transition-colors"
+                                className="bg-transparent border-b border-border pb-2 text-foreground outline-none focus:border-gold-500 transition-colors"
                                 placeholder="John Doe"
                             />
                         </div>
                     )}
                     <div className="flex flex-col gap-3">
-                        <label className="text-xs uppercase tracking-widest text-gray-500">Email Address *</label>
+                        <label className="text-xs uppercase tracking-widest text-foreground/50">Email Address *</label>
                         <input
                             required
                             type="email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
-                            className="bg-transparent border-b border-white/20 pb-2 text-white outline-none focus:border-gold-500 transition-colors"
+                            className="bg-transparent border-b border-border pb-2 text-foreground outline-none focus:border-gold-500 transition-colors"
                             placeholder="you@domain.com"
                         />
                     </div>
                     <div className="flex flex-col gap-3">
-                        <label className="text-xs uppercase tracking-widest text-gray-500">Password *</label>
+                        <label className="text-xs uppercase tracking-widest text-foreground/50">Password *</label>
                         <input
                             required
                             type="password"
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
-                            className="bg-transparent border-b border-white/20 pb-2 text-white outline-none focus:border-gold-500 transition-colors"
+                            className="bg-transparent border-b border-border pb-2 text-foreground outline-none focus:border-gold-500 transition-colors"
                             placeholder="••••••••"
                         />
                     </div>
 
                     {isLogin && (
                         <div className="flex justify-end">
-                            <Link href="#" className="text-xs text-gray-500 hover:text-white transition-colors">
+                            <Link href="#" className="text-xs text-foreground/50 hover:text-foreground transition-colors">
                                 Forgot Password?
                             </Link>
                         </div>
@@ -122,18 +122,18 @@ export default function AuthPage() {
                     <button
                         type="submit"
                         disabled={isLoading}
-                        className="w-full bg-gold-500 text-black py-4 mt-4 uppercase tracking-widest text-sm font-semibold hover:bg-white transition-colors disabled:opacity-50"
+                        className="w-full bg-gold-500 text-background py-4 mt-4 uppercase tracking-widest text-sm font-semibold hover:bg-foreground transition-colors disabled:opacity-50"
                     >
                         {isLoading ? "Authenticating..." : isLogin ? "Sign In" : "Register"}
                     </button>
                 </form>
 
-                <div className="mt-8 text-center border-t border-white/10 pt-8">
-                    <p className="text-sm text-gray-500">
+                <div className="mt-8 text-center border-t border-border pt-8">
+                    <p className="text-sm text-foreground/50">
                         {isLogin ? "Don't have an account?" : "Already have an account?"}
                         <button
                             onClick={() => setIsLogin(!isLogin)}
-                            className="ml-2 text-gold-500 hover:text-white transition-colors uppercase tracking-widest text-xs"
+                            className="ml-2 text-gold-500 hover:text-foreground transition-colors uppercase tracking-widest text-xs"
                         >
                             {isLogin ? "Sign Up" : "Log In"}
                         </button>

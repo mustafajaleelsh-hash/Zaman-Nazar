@@ -14,7 +14,7 @@ export const AddToCartButton = ({ product, className, children }: { product: Pro
                 e.stopPropagation();
                 addToCart(product);
             }}
-            className={className || "bg-gold-500 text-black px-6 py-4 uppercase tracking-widest text-xs font-semibold hover:bg-white transition-colors"}
+            className={className || "bg-gold-500 text-background px-6 py-4 uppercase tracking-widest text-xs font-semibold hover:bg-foreground transition-colors"}
         >
             {children || "Add To Cart"}
         </button>

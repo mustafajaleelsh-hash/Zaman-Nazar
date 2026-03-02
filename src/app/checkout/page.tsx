@@ -101,9 +101,9 @@ export default function CheckoutPage() {
 
     if (cartItems.length === 0 && step === 1) {
         return (
-            <div className="min-h-screen bg-black pt-32 pb-24 px-6 flex flex-col items-center justify-center text-center">
-                <h1 className="text-3xl font-serif text-white tracking-widest mb-6">YOUR BAG IS EMPTY</h1>
-                <Link href="/watches" className="text-gold-500 uppercase tracking-widest text-sm border-b border-gold-500 pb-1 hover:text-white hover:border-white transition-colors">
+            <div className="min-h-screen bg-background pt-32 pb-24 px-6 flex flex-col items-center justify-center text-center">
+                <h1 className="text-3xl font-serif text-foreground tracking-widest mb-6">YOUR BAG IS EMPTY</h1>
+                <Link href="/watches" className="text-gold-500 uppercase tracking-widest text-sm border-b border-gold-500 pb-1 hover:text-foreground hover:border-foreground transition-colors">
                     Return to Collections
                 </Link>
             </div>
@@ -112,15 +112,15 @@ export default function CheckoutPage() {
 
     if (step === 2) {
         return (
-            <div className="min-h-screen bg-black pt-32 pb-24 px-6 flex flex-col items-center justify-center text-center">
+            <div className="min-h-screen bg-background pt-32 pb-24 px-6 flex flex-col items-center justify-center text-center">
                 <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} className="w-24 h-24 bg-gold-500/10 rounded-full flex items-center justify-center mb-8 border border-gold-500/30">
                     <Check className="text-gold-500" size={40} />
                 </motion.div>
-                <h1 className="text-4xl md:text-5xl font-serif text-white tracking-widest mb-6">ORDER CONFIRMED</h1>
-                <p className="text-gray-400 font-light max-w-md mx-auto mb-12">
+                <h1 className="text-4xl md:text-5xl font-serif text-foreground tracking-widest mb-6">ORDER CONFIRMED</h1>
+                <p className="text-foreground/70 font-light max-w-md mx-auto mb-12">
                     Thank you for choosing Zaman & Nazar. Your luxury timepiece will be prepared for fully insured delivery.
                 </p>
-                <Link href="/" className="bg-gold-500 text-black px-10 py-4 uppercase tracking-[0.2em] text-sm font-semibold hover:bg-white transition-colors">
+                <Link href="/" className="bg-gold-500 text-background px-10 py-4 uppercase tracking-[0.2em] text-sm font-semibold hover:bg-foreground transition-colors">
                     Return to Boutique
                 </Link>
             </div>
@@ -137,7 +137,7 @@ export default function CheckoutPage() {
                     animate={{ y: 0, opacity: 1 }}
                     whileHover={{ scale: 1.1 }}
                     onClick={() => setShowGiftPopup(true)}
-                    className="fixed bottom-10 right-10 z-30 bg-gold-500 text-black p-4 rounded-full shadow-[0_0_30px_rgba(212,175,55,0.4)] flex items-center justify-center animate-bounce"
+                    className="fixed bottom-10 right-10 z-30 bg-gold-500 text-background p-4 rounded-full shadow-[0_0_30px_rgba(212,175,55,0.4)] flex items-center justify-center animate-bounce"
                 >
                     <Gift size={24} />
                 </motion.button>
@@ -150,19 +150,19 @@ export default function CheckoutPage() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-md px-4"
+                        className="fixed inset-0 z-50 flex items-center justify-center bg-background/80 backdrop-blur-md px-4"
                     >
                         <motion.div
                             initial={{ scale: 0.9, y: 50 }}
                             animate={{ scale: 1, y: 0 }}
                             exit={{ scale: 0.9, y: 50 }}
-                            className="bg-[#111] border border-gold-500/30 p-12 max-w-md w-full text-center relative shadow-2xl"
+                            className="bg-panel border border-gold-500/30 p-12 max-w-md w-full text-center relative shadow-2xl"
                         >
-                            <button onClick={() => setShowGiftPopup(false)} className="absolute top-4 right-4 text-gray-500 hover:text-white">x</button>
+                            <button onClick={() => setShowGiftPopup(false)} className="absolute top-4 right-4 text-foreground/50 hover:text-foreground">x</button>
                             <Gift size={48} className="text-gold-500 mx-auto mb-6" />
-                            <h3 className="text-2xl font-serif text-white mb-2 tracking-wider">A GIFT FOR YOU</h3>
-                            <p className="text-gray-400 font-light mb-8 text-sm leading-relaxed">As a token of our appreciation, please enjoy a complimentary 5% courtesy on your entire purchase today.</p>
-                            <div className="bg-black border border-white/10 p-4 mb-8">
+                            <h3 className="text-2xl font-serif text-foreground mb-2 tracking-wider">A GIFT FOR YOU</h3>
+                            <p className="text-foreground/70 font-light mb-8 text-sm leading-relaxed">As a token of our appreciation, please enjoy a complimentary 5% courtesy on your entire purchase today.</p>
+                            <div className="bg-background border border-border p-4 mb-8">
                                 <span className="text-gold-500 font-mono text-xl tracking-[0.3em]">GIFT5</span>
                             </div>
                             <button
@@ -170,7 +170,7 @@ export default function CheckoutPage() {
                                     setPromoCode("GIFT5");
                                     setShowGiftPopup(false);
                                 }}
-                                className="w-full bg-gold-500 text-black py-4 uppercase tracking-widest text-xs font-semibold hover:bg-white transition-colors"
+                                className="w-full bg-gold-500 text-background py-4 uppercase tracking-widest text-xs font-semibold hover:bg-foreground transition-colors"
                             >
                                 Apply to Checkout
                             </button>
@@ -180,7 +180,7 @@ export default function CheckoutPage() {
             </AnimatePresence>
 
             <div className="container mx-auto max-w-6xl">
-                <h1 className="text-3xl font-serif text-white tracking-widest uppercase mb-12 border-b border-white/10 pb-6">Secure Checkout</h1>
+                <h1 className="text-3xl font-serif text-foreground tracking-widest uppercase mb-12 border-b border-border pb-6">Secure Checkout</h1>
 
                 <form id="checkout-form" onSubmit={handleCheckoutSubmit} className="flex flex-col lg:flex-row gap-16">
 
@@ -194,10 +194,10 @@ export default function CheckoutPage() {
                                 Contact Information
                             </h2>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <input required value={firstName} onChange={e => setFirstName(e.target.value)} type="text" placeholder="First Name *" className="bg-transparent border border-white/10 p-4 text-white text-sm outline-none focus:border-gold-500 focus:bg-white/5 transition-all" />
-                                <input required value={lastName} onChange={e => setLastName(e.target.value)} type="text" placeholder="Last Name *" className="bg-transparent border border-white/10 p-4 text-white text-sm outline-none focus:border-gold-500 focus:bg-white/5 transition-all" />
-                                <input required value={email} onChange={e => setEmail(e.target.value)} type="email" placeholder="Email Address *" className="bg-transparent border border-white/10 p-4 text-white text-sm outline-none focus:border-gold-500 focus:bg-white/5 transition-all md:col-span-2" />
-                                <input required value={phone} onChange={e => setPhone(e.target.value)} type="tel" placeholder="Phone Number *" className="bg-transparent border border-white/10 p-4 text-white text-sm outline-none focus:border-gold-500 focus:bg-white/5 transition-all md:col-span-2" />
+                                <input required value={firstName} onChange={e => setFirstName(e.target.value)} type="text" placeholder="First Name *" className="bg-transparent border border-border p-4 text-foreground text-sm outline-none focus:border-gold-500 focus:bg-foreground/5 transition-all" />
+                                <input required value={lastName} onChange={e => setLastName(e.target.value)} type="text" placeholder="Last Name *" className="bg-transparent border border-border p-4 text-foreground text-sm outline-none focus:border-gold-500 focus:bg-foreground/5 transition-all" />
+                                <input required value={email} onChange={e => setEmail(e.target.value)} type="email" placeholder="Email Address *" className="bg-transparent border border-border p-4 text-foreground text-sm outline-none focus:border-gold-500 focus:bg-foreground/5 transition-all md:col-span-2" />
+                                <input required value={phone} onChange={e => setPhone(e.target.value)} type="tel" placeholder="Phone Number *" className="bg-transparent border border-border p-4 text-foreground text-sm outline-none focus:border-gold-500 focus:bg-foreground/5 transition-all md:col-span-2" />
                             </div>
                         </section>
 
@@ -211,15 +211,15 @@ export default function CheckoutPage() {
                                 <label className="flex items-start gap-4 p-6 border border-gold-500 bg-gold-500/5 cursor-pointer">
                                     <input type="radio" name="delivery" defaultChecked className="mt-1 accent-gold-500" />
                                     <div>
-                                        <span className="block text-white uppercase tracking-widest text-sm mb-1">Insured Armor Delivery (Free)</span>
-                                        <span className="text-gray-400 text-xs font-light">Secure delivery within 2-3 business days across Pakistan. Includes transit insurance.</span>
+                                        <span className="block text-foreground uppercase tracking-widest text-sm mb-1">Insured Armor Delivery (Free)</span>
+                                        <span className="text-foreground/70 text-xs font-light">Secure delivery within 2-3 business days across Pakistan. Includes transit insurance.</span>
                                     </div>
                                 </label>
-                                <label className="flex items-start gap-4 p-6 border border-white/10 opacity-50 cursor-not-allowed">
+                                <label className="flex items-start gap-4 p-6 border border-border opacity-50 cursor-not-allowed">
                                     <input type="radio" name="delivery" disabled className="mt-1" />
                                     <div>
-                                        <span className="block text-white uppercase tracking-widest text-sm mb-1">Boutique Pickup (Lahore Only)</span>
-                                        <span className="text-gray-400 text-xs font-light">Currently unavailable for this order.</span>
+                                        <span className="block text-foreground uppercase tracking-widest text-sm mb-1">Boutique Pickup (Lahore Only)</span>
+                                        <span className="text-foreground/70 text-xs font-light">Currently unavailable for this order.</span>
                                     </div>
                                 </label>
                             </div>
@@ -231,10 +231,10 @@ export default function CheckoutPage() {
                                 Shipping Address
                             </h2>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <input required value={street} onChange={e => setStreet(e.target.value)} type="text" placeholder="Street Address *" className="bg-transparent border border-white/10 p-4 text-white text-sm outline-none focus:border-gold-500 focus:bg-white/5 transition-all md:col-span-2" />
-                                <input value={apartment} onChange={e => setApartment(e.target.value)} type="text" placeholder="Apartment, Suite (Optional)" className="bg-transparent border border-white/10 p-4 text-white text-sm outline-none focus:border-gold-500 focus:bg-white/5 transition-all md:col-span-2" />
-                                <input required value={city} onChange={e => setCity(e.target.value)} type="text" placeholder="City *" className="bg-transparent border border-white/10 p-4 text-white text-sm outline-none focus:border-gold-500 focus:bg-white/5 transition-all" />
-                                <input required value={postal} onChange={e => setPostal(e.target.value)} type="text" placeholder="Postal Code *" className="bg-transparent border border-white/10 p-4 text-white text-sm outline-none focus:border-gold-500 focus:bg-white/5 transition-all" />
+                                <input required value={street} onChange={e => setStreet(e.target.value)} type="text" placeholder="Street Address *" className="bg-transparent border border-border p-4 text-foreground text-sm outline-none focus:border-gold-500 focus:bg-foreground/5 transition-all md:col-span-2" />
+                                <input value={apartment} onChange={e => setApartment(e.target.value)} type="text" placeholder="Apartment, Suite (Optional)" className="bg-transparent border border-border p-4 text-foreground text-sm outline-none focus:border-gold-500 focus:bg-foreground/5 transition-all md:col-span-2" />
+                                <input required value={city} onChange={e => setCity(e.target.value)} type="text" placeholder="City *" className="bg-transparent border border-border p-4 text-foreground text-sm outline-none focus:border-gold-500 focus:bg-foreground/5 transition-all" />
+                                <input required value={postal} onChange={e => setPostal(e.target.value)} type="text" placeholder="Postal Code *" className="bg-transparent border border-border p-4 text-foreground text-sm outline-none focus:border-gold-500 focus:bg-foreground/5 transition-all" />
                             </div>
                         </section>
 
@@ -242,29 +242,29 @@ export default function CheckoutPage() {
 
                     {/* Right Column: Order Summary */}
                     <div className="w-full lg:w-2/5">
-                        <div className="bg-[#0a0a0a] border border-white/10 p-8 sticky top-32">
-                            <h2 className="text-lg font-serif tracking-widest text-white uppercase mb-8 border-b border-white/10 pb-4">Order Summary</h2>
+                        <div className="bg-background border border-border p-8 sticky top-32">
+                            <h2 className="text-lg font-serif tracking-widest text-foreground uppercase mb-8 border-b border-border pb-4">Order Summary</h2>
 
                             <div className="flex flex-col gap-6 mb-8 max-h-[40vh] overflow-y-auto pr-2">
                                 {cartItems.map((item) => (
                                     <div key={item.product.id} className="flex gap-4">
-                                        <div className="relative w-16 h-20 bg-[#111] flex-shrink-0">
+                                        <div className="relative w-16 h-20 bg-panel flex-shrink-0">
                                             <Image src={item.product.image} alt={item.product.name} fill className="object-cover" />
-                                            <span className="absolute -top-2 -right-2 bg-gray-800 text-white text-[10px] w-5 h-5 flex items-center justify-center rounded-full border border-gray-600">{item.quantity}</span>
+                                            <span className="absolute -top-2 -right-2 bg-foreground/10 text-foreground text-[10px] w-5 h-5 flex items-center justify-center rounded-full border border-border">{item.quantity}</span>
                                         </div>
                                         <div className="flex flex-col justify-center flex-1">
-                                            <p className="text-[10px] uppercase tracking-widest text-gray-500 mb-1">{item.product.brand}</p>
-                                            <h4 className="text-sm text-white font-medium line-clamp-1">{item.product.name}</h4>
+                                            <p className="text-[10px] uppercase tracking-widest text-foreground/50 mb-1">{item.product.brand}</p>
+                                            <h4 className="text-sm text-foreground font-medium line-clamp-1">{item.product.name}</h4>
                                         </div>
                                         <div className="flex items-center">
-                                            <p className="text-white text-sm">{formatPrice(item.product.price * item.quantity)}</p>
+                                            <p className="text-foreground text-sm">{formatPrice(item.product.price * item.quantity)}</p>
                                         </div>
                                     </div>
                                 ))}
                             </div>
 
                             {/* Promo Code */}
-                            <div className="mb-8 pt-6 border-t border-white/10">
+                            <div className="mb-8 pt-6 border-t border-border">
                                 <div className="flex gap-4">
                                     <input
                                         type="text"
@@ -272,13 +272,13 @@ export default function CheckoutPage() {
                                         onChange={(e) => setPromoCode(e.target.value)}
                                         placeholder="Gift card or discount code"
                                         disabled={promoApplied}
-                                        className="bg-transparent border border-white/10 p-4 text-white text-sm outline-none focus:border-gold-500 flex-1 disabled:opacity-50 uppercase"
+                                        className="bg-transparent border border-border p-4 text-foreground text-sm outline-none focus:border-gold-500 flex-1 disabled:opacity-50 uppercase"
                                     />
                                     <button
                                         type="button"
                                         onClick={handleApplyPromo}
                                         disabled={promoApplied || !promoCode}
-                                        className="bg-white/10 text-white px-6 uppercase tracking-widest text-xs hover:bg-white/20 transition-colors disabled:opacity-50"
+                                        className="bg-foreground/10 text-foreground px-6 uppercase tracking-widest text-xs hover:bg-foreground/20 transition-colors disabled:opacity-50"
                                     >
                                         Apply
                                     </button>
@@ -291,10 +291,10 @@ export default function CheckoutPage() {
                             </div>
 
                             {/* Totals */}
-                            <div className="flex flex-col gap-4 border-t border-white/10 pt-6 mb-8">
+                            <div className="flex flex-col gap-4 border-t border-border pt-6 mb-8">
                                 <div className="flex justify-between text-sm">
-                                    <span className="text-gray-400">Subtotal</span>
-                                    <span className="text-white">{formatPrice(cartTotal)}</span>
+                                    <span className="text-foreground/70">Subtotal</span>
+                                    <span className="text-foreground">{formatPrice(cartTotal)}</span>
                                 </div>
                                 {promoApplied && (
                                     <div className="flex justify-between text-sm">
@@ -303,13 +303,13 @@ export default function CheckoutPage() {
                                     </div>
                                 )}
                                 <div className="flex justify-between text-sm">
-                                    <span className="text-gray-400">Shipping</span>
-                                    <span className="text-white">Complimentary</span>
+                                    <span className="text-foreground/70">Shipping</span>
+                                    <span className="text-foreground">Complimentary</span>
                                 </div>
                             </div>
 
-                            <div className="flex justify-between border-t border-white/10 pt-6 mb-8">
-                                <span className="text-white uppercase tracking-widest text-sm">Total</span>
+                            <div className="flex justify-between border-t border-border pt-6 mb-8">
+                                <span className="text-foreground uppercase tracking-widest text-sm">Total</span>
                                 <span className="text-gold-500 font-serif text-2xl">{formatPrice(finalTotal)}</span>
                             </div>
 
@@ -317,13 +317,13 @@ export default function CheckoutPage() {
                                 type="submit"
                                 disabled={isSubmitting}
                                 form="checkout-form"
-                                className="w-full bg-gold-500 text-black py-5 uppercase tracking-[0.2em] text-sm font-semibold hover:bg-white transition-colors flex items-center justify-center gap-2 group disabled:opacity-50"
+                                className="w-full bg-gold-500 text-background py-5 uppercase tracking-[0.2em] text-sm font-semibold hover:bg-foreground transition-colors flex items-center justify-center gap-2 group disabled:opacity-50"
                             >
                                 {isSubmitting ? "Processing..." : "Complete Order"}
                                 <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                             </button>
 
-                            <p className="text-center text-[10px] text-gray-500 uppercase tracking-widest mt-6 flex justify-center items-center gap-2">
+                            <p className="text-center text-[10px] text-foreground/50 uppercase tracking-widest mt-6 flex justify-center items-center gap-2">
                                 Secure Encrypted Checkout
                             </p>
 

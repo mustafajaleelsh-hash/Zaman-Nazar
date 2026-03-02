@@ -26,14 +26,14 @@ export const ProductGrid: React.FC<ProductGridProps> = ({ title, description, pr
     });
 
     return (
-        <div className="min-h-screen bg-black pt-12 pb-24 px-6 md:px-12">
+        <div className="min-h-screen bg-background pt-12 pb-24 px-6 md:px-12">
             <div className="container mx-auto">
                 {/* Header */}
                 <div className="text-center mb-16">
                     <motion.h1
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="text-4xl md:text-5xl lg:text-6xl font-serif text-white tracking-widest uppercase mb-6"
+                        className="text-4xl md:text-5xl lg:text-6xl font-serif text-foreground tracking-widest uppercase mb-6"
                     >
                         {title}
                     </motion.h1>
@@ -41,44 +41,44 @@ export const ProductGrid: React.FC<ProductGridProps> = ({ title, description, pr
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.2 }}
-                        className="text-gray-400 max-w-2xl mx-auto tracking-wide font-light"
+                        className="text-foreground/70 max-w-2xl mx-auto tracking-wide font-light"
                     >
                         {description}
                     </motion.p>
                 </div>
 
                 {/* Toolbar */}
-                <div className="flex flex-col md:flex-row justify-between items-center mb-12 pb-6 border-b border-white/10 gap-6">
-                    <div className="text-sm text-gray-400 tracking-widest uppercase">
+                <div className="flex flex-col md:flex-row justify-between items-center mb-12 pb-6 border-b border-border gap-6">
+                    <div className="text-sm text-foreground/70 tracking-widest uppercase">
                         Showing {products.length} Products
                     </div>
 
                     <div className="flex items-center gap-6">
-                        <button className="flex items-center gap-2 text-sm text-white uppercase tracking-widest hover:text-gold-500 transition-colors">
+                        <button className="flex items-center gap-2 text-sm text-foreground uppercase tracking-widest hover:text-gold-500 transition-colors">
                             <Filter size={16} />
                             Filter
                         </button>
                         <div className="relative group">
-                            <button className="flex items-center gap-2 text-sm text-white uppercase tracking-widest hover:text-gold-500 transition-colors">
+                            <button className="flex items-center gap-2 text-sm text-foreground uppercase tracking-widest hover:text-gold-500 transition-colors">
                                 Sort By
                                 <ChevronDown size={14} />
                             </button>
-                            <div className="absolute right-0 top-full mt-2 w-48 bg-[#111] border border-white/10 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-20 shadow-2xl">
+                            <div className="absolute right-0 top-full mt-2 w-48 bg-panel border border-border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-20 shadow-2xl">
                                 <button
                                     onClick={() => setSortOrder("featured")}
-                                    className={`w-full text-left px-4 py-3 text-xs tracking-widest uppercase hover:bg-white/5 transition-colors ${sortOrder === "featured" ? "text-gold-500" : "text-gray-400"}`}
+                                    className={`w-full text-left px-4 py-3 text-xs tracking-widest uppercase hover:bg-foreground/5 transition-colors ${sortOrder === "featured" ? "text-gold-500" : "text-foreground/70"}`}
                                 >
                                     Featured
                                 </button>
                                 <button
                                     onClick={() => setSortOrder("price-asc")}
-                                    className={`w-full text-left px-4 py-3 text-xs tracking-widest uppercase hover:bg-white/5 transition-colors ${sortOrder === "price-asc" ? "text-gold-500" : "text-gray-400"}`}
+                                    className={`w-full text-left px-4 py-3 text-xs tracking-widest uppercase hover:bg-foreground/5 transition-colors ${sortOrder === "price-asc" ? "text-gold-500" : "text-foreground/70"}`}
                                 >
                                     Price: Low to High
                                 </button>
                                 <button
                                     onClick={() => setSortOrder("price-desc")}
-                                    className={`w-full text-left px-4 py-3 text-xs tracking-widest uppercase hover:bg-white/5 transition-colors ${sortOrder === "price-desc" ? "text-gold-500" : "text-gray-400"}`}
+                                    className={`w-full text-left px-4 py-3 text-xs tracking-widest uppercase hover:bg-foreground/5 transition-colors ${sortOrder === "price-desc" ? "text-gold-500" : "text-foreground/70"}`}
                                 >
                                     Price: High to Low
                                 </button>
@@ -97,7 +97,7 @@ export const ProductGrid: React.FC<ProductGridProps> = ({ title, description, pr
                             key={product.id}
                             className="group cursor-pointer flex flex-col"
                         >
-                            <Link href={`/product/${product.id}`} className="relative h-[450px] w-full bg-[#111] overflow-hidden mb-6 block">
+                            <Link href={`/product/${product.id}`} className="relative h-[450px] w-full bg-panel overflow-hidden mb-6 block">
                                 <Image
                                     src={product.image}
                                     alt={product.name}
@@ -105,7 +105,7 @@ export const ProductGrid: React.FC<ProductGridProps> = ({ title, description, pr
                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                                     className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-out opacity-90 group-hover:opacity-100"
                                 />
-                                <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors duration-500" />
+                                <div className="absolute inset-0 bg-background/20 group-hover:bg-transparent transition-colors duration-500" />
                                 <div className="absolute bottom-0 left-0 w-full p-4 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out z-20 flex justify-center">
                                     <button
                                         onClick={(e) => {
@@ -113,7 +113,7 @@ export const ProductGrid: React.FC<ProductGridProps> = ({ title, description, pr
                                             e.stopPropagation();
                                             addToCart(product);
                                         }}
-                                        className="bg-gold-500 text-black px-6 py-4 uppercase tracking-widest text-xs font-semibold w-full hover:bg-white transition-colors"
+                                        className="bg-gold-500 text-background px-6 py-4 uppercase tracking-widest text-xs font-semibold w-full hover:bg-foreground transition-colors"
                                     >
                                         Add To Cart
                                     </button>
@@ -121,8 +121,8 @@ export const ProductGrid: React.FC<ProductGridProps> = ({ title, description, pr
                             </Link>
 
                             <Link href={`/product/${product.id}`} className="text-center px-4 flex-1 flex flex-col">
-                                <p className="text-xs uppercase tracking-[0.2em] text-gray-500 mb-2">{product.brand}</p>
-                                <h4 className="text-lg text-white font-medium mb-3 group-hover:text-gold-500 transition-colors flex-1">{product.name}</h4>
+                                <p className="text-xs uppercase tracking-[0.2em] text-foreground/50 mb-2">{product.brand}</p>
+                                <h4 className="text-lg text-foreground font-medium mb-3 group-hover:text-gold-500 transition-colors flex-1">{product.name}</h4>
                                 <p className="text-gold-500 font-serif text-xl tracking-wider">
                                     {new Intl.NumberFormat("en-PK", { style: "currency", currency: "PKR", maximumFractionDigits: 0 }).format(product.price)}
                                 </p>
