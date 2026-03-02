@@ -86,9 +86,9 @@ export default function Home() {
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 1.2, delay: 0.2, ease: "easeOut" }}
             >
-              <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif tracking-widest text-foreground mb-6 leading-tight drop-shadow-2xl">
+              <h1 className="text-5xl md:text-7xl lg:text-[10rem] font-[family-name:var(--font-playfair)] font-bold tracking-tight text-foreground mb-6 leading-[0.9] drop-shadow-[0_10px_35px_rgba(0,0,0,0.8)]">
                 {HERO_SLIDES[currentSlide].title1} <br />
-                <span className="text-gold-500 italic font-light">{HERO_SLIDES[currentSlide].title2}</span>
+                <span className="text-gold-500 italic font-light drop-shadow-[0_10px_25px_rgba(212,175,55,0.4)]">{HERO_SLIDES[currentSlide].title2}</span>
               </h1>
 
               <motion.p
@@ -161,7 +161,7 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-border pb-8">
             <div>
               <h2 className="text-sm text-gold-500 tracking-[0.3em] uppercase mb-4">Curated Selection</h2>
-              <h3 className="text-4xl md:text-5xl font-serif text-foreground tracking-wide">THE <span className="italic">HIGHLIGHTS</span></h3>
+              <h3 className="text-4xl md:text-6xl font-[family-name:var(--font-playfair)] text-foreground tracking-wide font-bold drop-shadow-sm">THE <span className="italic text-gold-500">HIGHLIGHTS</span></h3>
             </div>
             <Link
               href="/watches"
@@ -228,7 +228,7 @@ export default function Home() {
           >
             <Image src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&q=80&w=1200" alt="Watches" fill className="object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-700" />
             <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center bg-background/20 group-hover:bg-background/50 transition-colors duration-500">
-              <h3 className="text-3xl lg:text-5xl font-serif text-foreground mb-4 tracking-widest">FINE WATCHES</h3>
+              <h3 className="text-3xl lg:text-5xl font-[family-name:var(--font-playfair)] font-bold text-foreground mb-4 tracking-widest drop-shadow-lg">FINE WATCHES</h3>
               <p className="text-foreground/80 font-light max-w-sm mb-8">Discover our exquisite collection of heritage timepieces.</p>
               <Link href="/watches" className="border border-gold-500 text-gold-500 px-8 py-3 uppercase tracking-widest text-xs hover:bg-gold-500 hover:text-background transition-colors">
                 Shop Watches
@@ -243,7 +243,7 @@ export default function Home() {
           >
             <Image src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&q=80&w=1200" alt="Glasses" fill className="object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-700" />
             <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center bg-background/20 group-hover:bg-background/50 transition-colors duration-500">
-              <h3 className="text-3xl lg:text-5xl font-serif text-foreground mb-4 tracking-widest">PREMIUM EYEWEAR</h3>
+              <h3 className="text-3xl lg:text-5xl font-[family-name:var(--font-playfair)] font-bold text-foreground mb-4 tracking-widest drop-shadow-lg">PREMIUM EYEWEAR</h3>
               <p className="text-foreground/80 font-light max-w-sm mb-8">Bold frames from the world's leading luxury houses.</p>
               <Link href="/glasses" className="border border-gold-500 text-gold-500 px-8 py-3 uppercase tracking-widest text-xs hover:bg-gold-500 hover:text-background transition-colors">
                 Shop Eyewear
@@ -257,8 +257,8 @@ export default function Home() {
       <section className="w-full flex flex-col lg:flex-row bg-background">
         <div className="lg:w-1/2 p-12 md:p-24 flex flex-col justify-center">
           <h2 className="text-sm text-gold-500 tracking-[0.3em] uppercase mb-6">Our Legacy</h2>
-          <h3 className="text-4xl md:text-5xl lg:text-6xl font-serif text-foreground tracking-wide leading-tight mb-8">
-            DEFINING <br /><span className="italic">LUXURY</span> SINCE 1999
+          <h3 className="text-4xl md:text-5xl lg:text-6xl font-[family-name:var(--font-playfair)] font-bold text-foreground tracking-wide leading-tight mb-8 drop-shadow-sm">
+            DEFINING <br /><span className="italic text-gold-500">LUXURY</span> SINCE 1999
           </h3>
           <div className="space-y-6 text-foreground/70 font-light leading-relaxed max-w-xl">
             <p>
