@@ -86,16 +86,16 @@ export default function Home() {
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 1.2, delay: 0.2, ease: "easeOut" }}
             >
-              <h1 className="text-5xl md:text-7xl lg:text-[10rem] font-[family-name:var(--font-playfair)] font-bold tracking-tight text-foreground mb-6 leading-[0.9] drop-shadow-[0_10px_35px_rgba(0,0,0,0.8)]">
+              <h1 className="text-5xl md:text-6xl lg:text-8xl font-[family-name:var(--font-playfair)] font-bold tracking-tight text-white mb-6 leading-[1.1] drop-shadow-[0_8px_20px_rgba(0,0,0,0.8)]">
                 {HERO_SLIDES[currentSlide].title1} <br />
-                <span className="text-gold-500 italic font-light drop-shadow-[0_10px_25px_rgba(212,175,55,0.4)]">{HERO_SLIDES[currentSlide].title2}</span>
+                <span className="text-gold-500 italic font-light drop-shadow-[0_4px_15px_rgba(0,0,0,0.5)]">{HERO_SLIDES[currentSlide].title2}</span>
               </h1>
 
               <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1.5, delay: 0.8 }}
-                className="text-foreground/90 text-lg md:text-xl tracking-widest uppercase mb-12 max-w-2xl mx-auto font-light drop-shadow-md"
+                className="text-white text-base md:text-lg tracking-widest uppercase mb-12 max-w-2xl mx-auto font-medium drop-shadow-[0_4px_10px_rgba(0,0,0,0.8)]"
               >
                 {HERO_SLIDES[currentSlide].subtitle}
               </motion.p>
@@ -228,8 +228,8 @@ export default function Home() {
           >
             <Image src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&q=80&w=1200" alt="Watches" fill className="object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-700" />
             <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center bg-background/20 group-hover:bg-background/50 transition-colors duration-500">
-              <h3 className="text-3xl lg:text-5xl font-[family-name:var(--font-playfair)] font-bold text-foreground mb-4 tracking-widest drop-shadow-lg">FINE WATCHES</h3>
-              <p className="text-foreground/80 font-light max-w-sm mb-8">Discover our exquisite collection of heritage timepieces.</p>
+              <h3 className="text-3xl lg:text-5xl font-[family-name:var(--font-playfair)] font-bold text-white mb-4 tracking-widest drop-shadow-lg">FINE WATCHES</h3>
+              <p className="text-white drop-shadow-md max-w-sm mb-8 tracking-wide">Discover our exquisite collection of heritage timepieces.</p>
               <Link href="/watches" className="border border-gold-500 text-gold-500 px-8 py-3 uppercase tracking-widest text-xs hover:bg-gold-500 hover:text-background transition-colors">
                 Shop Watches
               </Link>
@@ -243,8 +243,8 @@ export default function Home() {
           >
             <Image src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&q=80&w=1200" alt="Glasses" fill className="object-cover opacity-60 group-hover:opacity-40 transition-opacity duration-700" />
             <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center bg-background/20 group-hover:bg-background/50 transition-colors duration-500">
-              <h3 className="text-3xl lg:text-5xl font-[family-name:var(--font-playfair)] font-bold text-foreground mb-4 tracking-widest drop-shadow-lg">PREMIUM EYEWEAR</h3>
-              <p className="text-foreground/80 font-light max-w-sm mb-8">Bold frames from the world's leading luxury houses.</p>
+              <h3 className="text-3xl lg:text-5xl font-[family-name:var(--font-playfair)] font-bold text-white mb-4 tracking-widest drop-shadow-lg">PREMIUM EYEWEAR</h3>
+              <p className="text-white drop-shadow-md max-w-sm mb-8 tracking-wide">Bold frames from the world's leading luxury houses.</p>
               <Link href="/glasses" className="border border-gold-500 text-gold-500 px-8 py-3 uppercase tracking-widest text-xs hover:bg-gold-500 hover:text-background transition-colors">
                 Shop Eyewear
               </Link>
