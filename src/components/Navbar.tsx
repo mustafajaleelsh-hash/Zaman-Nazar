@@ -10,6 +10,7 @@ import Image from "next/image";
 import productsData from "@/data/products.json";
 import { Product } from "@/types";
 import { supabase } from "@/lib/supabase";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -82,7 +83,8 @@ export const Navbar = () => {
         >
             <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
                 {/* Mobile Menu & Search Button */}
-                <div className="md:hidden flex space-x-4">
+                <div className="md:hidden flex space-x-4 items-center">
+                    <ThemeToggle />
                     <button
                         className="text-white hover:text-gold-500 transition-colors"
                         onClick={() => setIsSearchOpen(true)}
@@ -123,7 +125,8 @@ export const Navbar = () => {
                 </nav>
 
                 {/* Actions */}
-                <div className="flex items-center space-x-6 text-white">
+                <div className="flex items-center space-x-6 text-white transition-colors duration-300">
+                    <ThemeToggle />
                     <button
                         onClick={() => setIsSearchOpen(true)}
                         className="hidden md:block hover:text-gold-500 transition-colors"
