@@ -20,7 +20,7 @@ export default function ContactPage() {
                     Whether you seek a rare timepiece or wish to discuss our warranty policies, our concierges are at your disposal.
                 </p>
 
-                <form className="bg-[#050505] p-8 md:p-16 border border-border flex flex-col gap-8 text-left mx-auto">
+                <form className="bg-panel p-8 md:p-16 border border-border flex flex-col gap-8 text-left mx-auto">
                     <div className="flex flex-col md:flex-row gap-8">
                         <div className="flex-1 flex flex-col gap-3">
                             <label className="text-xs tracking-widest uppercase text-foreground/50" htmlFor="name">Full Name</label>

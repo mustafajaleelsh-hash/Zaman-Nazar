@@ -136,7 +136,7 @@ export default function Home() {
       </section>
 
       {/* Trust & Guarantees Section */}
-      <section className="w-full py-16 bg-[#050505] border-y border-foreground/5">
+      <section className="w-full py-16 bg-panel border-y border-foreground/5">
         <div className="container mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-border">
             <div className="px-6 py-4 md:py-0">
@@ -218,7 +218,7 @@ export default function Home() {
       </section>
 
       {/* Category Spotlight Section */}
-      <section className="w-full bg-[#050505] py-24">
+      <section className="w-full bg-panel py-24">
         <div className="container mx-auto px-6 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Watches */}
           <motion.div

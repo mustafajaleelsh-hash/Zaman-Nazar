@@ -9,7 +9,7 @@ export const HotDealsSidebar = () => {
     const hotDeals = (productsData as Product[]).filter(p => ["w5", "g6", "w8"].includes(p.id));
 
     return (
-        <div className="bg-[#050505] border border-border p-6 flex flex-col gap-8 sticky top-32">
+        <div className="bg-panel border border-border p-6 flex flex-col gap-8 sticky top-32">
             <h3 className="text-xl font-serif tracking-widest text-gold-500 uppercase border-b border-border pb-4">
                 Hot Deals
             </h3>

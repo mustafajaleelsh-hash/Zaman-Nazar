@@ -128,7 +128,7 @@ export default function CheckoutPage() {
     }
 
     return (
-        <div className="min-h-screen bg-[#050505] pt-24 pb-24 px-6 md:px-12 relative overflow-hidden">
+        <div className="min-h-screen bg-background pt-24 pb-24 px-6 md:px-12 relative overflow-hidden">
 
             {/* Gift Box Floating Trigger */}
             {!promoApplied && (

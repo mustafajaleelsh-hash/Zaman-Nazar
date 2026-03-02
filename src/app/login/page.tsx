@@ -53,7 +53,7 @@ export default function AuthPage() {
     };
 
     return (
-        <div className="min-h-screen bg-[#050505] pt-32 pb-24 px-6 flex flex-col items-center justify-center relative overflow-hidden">
+        <div className="min-h-screen bg-panel pt-32 pb-24 px-6 flex flex-col items-center justify-center relative overflow-hidden">
 
             {/* Background Decor */}
             <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-gold-500/5 rounded-full blur-[120px] pointer-events-none" />
