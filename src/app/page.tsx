@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Script from "next/script";
 import { motion, AnimatePresence } from "framer-motion";
 import productsData from "@/data/products.json";
 import { Product } from "@/types";
@@ -152,6 +153,27 @@ export default function Home() {
               <p className="text-foreground/70 text-sm font-light">Every item is rigorously verified by our in-house experts.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Ad Banner Section */}
+      <section className="w-full py-8 flex justify-center bg-[#050505] border-b border-white/5">
+        <div id="ad-banner-container" className="overflow-hidden">
+          <Script id="ad-options" strategy="afterInteractive">
+            {`
+              window.atOptions = {
+                'key' : 'dd428437fb5bc85f2a22d604749c7bce',
+                'format' : 'iframe',
+                'height' : 60,
+                'width' : 468,
+                'params' : {}
+              };
+            `}
+          </Script>
+          <Script 
+            src="https://www.highperformanceformat.com/dd428437fb5bc85f2a22d604749c7bce/invoke.js" 
+            strategy="afterInteractive" 
+          />
         </div>
       </section>
 
